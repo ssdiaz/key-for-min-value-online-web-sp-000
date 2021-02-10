@@ -4,10 +4,10 @@
 # returns key of smalled value of set
 def key_for_min_value(name_hash)
   smallest_value = ""
-  name_hash.each do |key, value|
-     if key[value] < key[value]
-       key = smallest_value
-       puts key
+  name_hash.each do |name, value|
+     if name[value] < name[value]
+       name = smallest_value
+       puts name
      end
   end
   smallest_value
