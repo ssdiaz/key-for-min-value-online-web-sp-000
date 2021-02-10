@@ -3,7 +3,7 @@
 
 # returns key of smalled value of set
 def key_for_min_value(name_hash)
-  name_of_smallest = ""
+  name_of_smallest = nil
   name_hash.each do |name, num|
     smallest_value = num
     if num <= smallest_value
