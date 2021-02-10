@@ -1,14 +1,14 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
-# returns key of smalled value of set
+# returns key of smallest value in hash
 def key_for_min_value(name_hash)
   name_of_smallest = nil
   smallest_value = nil
 
   name_hash.each do |name, num|
-    current_num = num
-    if smallest_value == nil || current_num <= smallest_value
+    #current_num = num
+    if smallest_value == nil || num <= smallest_value
       smallest_value = num
       name_of_smallest = name
     end
